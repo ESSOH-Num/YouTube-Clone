@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube Clone</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM6tU8zTMa3j5eQf3jgELCcs1vXGOZ7NKGK2hRnQC3Pr17a+N4N5z+dEgHGKBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="sub-nav.css">
+  <link rel="stylesheet" href="video.css">
+  <link rel="stylesheet" href="shorts.css">
 </head>
 <body>
- <!--Header--> 
+ <!--Header (En-tête)-->
   <header class="header">
-    <!--Left section-->
+    <!--Left section (Partie gauche)-->
       <div class="left-section">
         <div class="berger-item">
           <img clas="berger-menu" src="header-icons/hamburger-menu.svg">
@@ -20,9 +24,9 @@
           <img class="ytb-logo" src="header-icons/youtube-logo.svg">
         </div>    
       </div>
-    <!--Left section-->
-    
-    <!--Middle section-->
+    <!--Left section (Partie gauche)-->
+
+    <!--Middle section (Milieu)-->
       <div class="middle-section">
         <div class="search">
           <input class="search-bar" type="search" placeholder="Search">
@@ -31,35 +35,308 @@
               <img class="search-img" src="header-icons/search.svg">
             </button>
           </div>
-          <div class="voice-search">
-            <button class="voice-search-btn">
-              <img class="voice-img" src="header-icons/voice-search-icon.svg">
-              <div class="toolltip">Voice search</div>
-            </button>
-          </div>         
+          <button class="voice-search-btn">
+            <img class="voice-img" src="header-icons/voice-search-icon.svg">
+            <div class="toolltip">Voice search</div>
+          </button>               
         </div>
       </div>
-    <!--Middle section-->
-    
-    <!--Right section-->
+    <!--Middle section (Milieu)-->
+
+    <!--Right section (Partie droite)-->
       <div class="right-section">
         <div class="right-section-contain">
           <div class="create">
             <button class="create-btn">
               <img class="create-img" src="header-icons/upload.svg">
+              <div class="toolltip">Create</div>
             </button>
           </div>
           <div class="notifications">            
             <img class="notif-img" src="header-icons/notifications.svg">
+            <div class="notif-count">4</div>
+            <div class="toolltip">Notifications</div>
           </div>
           <div class="page-profil">
             <img class="profil-img" src="header-icons/unnamed.jpg">
           </div>
         </div>
       </div>
-    <!--Right section-->  
+    <!--Right section (Partie droite)-->  
   </header>
- <!--Header-->
-  
+ <!--Header (En-tête)-->
+
+ <!--Sidebar (Barre latérale)-->
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM304 384L336 384C362.5 384 384 405.5 384 432L384 528L256 528L256 432C256 405.5 277.5 384 304 384z"/></svg>
+      <span class="sidebar-link-text">Home</span>
+    </div>
+    <div class="sidebar-link">
+      <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"/></svg>
+      <span class="sidebar-link-text">Shorts</span>
+    </div>
+    <div class="sidebar-link">
+        <img class="item-icon" src="sidebar-icons/subscriptions.svg">
+        <i class="fa-regular fa-rectangle-history"></i>
+        <span class="sidebar-link-text">Subscribe</span>
+    </div>
+    <div class="sidebar-link">
+      <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M463 448.2C440.9 409.8 399.4 384 352 384L288 384C240.6 384 199.1 409.8 177 448.2C212.2 487.4 263.2 512 320 512C376.8 512 427.8 487.3 463 448.2zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320zM320 336C359.8 336 392 303.8 392 264C392 224.2 359.8 192 320 192C280.2 192 248 224.2 248 264C248 303.8 280.2 336 320 336z"/></svg>
+      <span class="sidebar-link-text">Channels</span>
+    </div>  
+  </nav>
+ <!--Sidebar (Barre latérale)-->
+
+ <!--Sub nav contain (Contenu de la sous-navigation)-->
+  <div class="sub-nav-container">
+    <div class="sub-nav-link">All</div>
+    <div class="sub-nav-link">Music</div>
+    <div class="sub-nav-link">Gaming</div>
+    <div class="sub-nav-link">News</div>
+    <div class="sub-nav-link">Movies</div>
+    <div class="sub-nav-link">Live</div>
+    <div class="sub-nav-link">Fashion & Beauty</div>
+    <div class="sub-nav-link">Learning</div>
+    <div class="sub-nav-link">Sports</div>
+  </div>
+ <!--Sub nav contain (Contenu de la sous-navigation)-->
+
+ <!--Main content area (Contenu principal)-->
+  <main class="main-content">
+    <!--Video grid-->
+    <div class="video-grid">
+      <!--Video item-->  
+      <div class="video-item">
+        <div class="video-item-effect"></div>
+        <div class="video-thumbnail">
+          <img class="thumbnail-img" src="video-img/Edith-bro&StanZ.avif" alt="Video Thumbnail 1">
+          <span class="video-time">1:56:04</span>
+        </div>       
+        <div class="video-info">
+          <img class="channel-avatar" src="video-img/Edith-brou picture.jpg" alt="Channel Avatar 1">
+          <div class="video-metadata">
+            <h3 class="video-title">EP26/ "Ne créez pas d'entreprises...</h3>
+            <p class="channel-name">Edith Brou Bleu</p>
+            <p class="video-stats">250 k views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-item">
+        <div class="video-item-effect-2"></div>
+        <div class="video-thumbnail">
+          <img class="thumbnail-img" src="video-img/Python-formation.avif" alt="Video Thumbnail 2">
+          <span class="video-time-2">6:57:48</span>
+        </div>       
+        <div class="video-info">
+          <img class="channel-avatar" src="video-img/docstring-py-profil.jpg" alt="Channel Avatar 2">
+          <div class="video-metadata">
+            <h3 class="video-title">APPRENDRE PYTHON DE A à Z</h3>
+            <p class="channel-name">Edith Brou Bleu</p>
+            <p class="video-stats">1,9 views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-item">
+        <div class="video-item-effect"></div>
+        <div class="video-thumbnail">
+          <img class="thumbnail-img" src="video-img/All-my-life.jpg" alt="Video Thumbnail 3">
+          <span class="video-time-3">&#8801; Mix</span>
+        </div>       
+        <div class="video-info">
+          <div class="video-metadata">
+            <h3 class="video-title">Mix - Lil Durk - All My Life ft. J. Cole</h3>
+            <p class="channel-name">Lil Durk, J. Cole, Kendrick Lamar et bien plus encore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Shorts Section-->
+    <div class="shorts">
+      <div class="shorts-icon">
+        <div class="shorts-logo">
+          <svg class="shorts-icon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"/></svg>
+        </div>
+        <span class="shorts-title-p">Shorts</span>
+      </div>
+      <div class="shorts-options">&#8942;</div>
+    </div>
+
+    <div class="shorts-grid">
+      <div class="shorts-item">
+        <div class="shorts-video">
+          <img class="shorts-img" src="shorts-img/Lamin-yamal.avif" alt="Shorts Thumbnail 1">
+        </div>
+        <div class="shorts-info-grid">
+          <div class="short-info-data">
+            <h3 class="shorts-title">Lamine Yamal vs Olympiacos</h3>
+            <p class="shorts-views">1,9M views</p>
+          </div>   
+          <div class="shorts-info-options">&#8942;</div>
+        </div>
+      </div>
+
+      <div class="shorts-item">
+        <div class="shorts-video">
+          <img class="shorts-img" src="shorts-img/Avatar.avif" alt="Shorts Thumbnail 2">
+        </div>
+        <div class="shorts-info-grid">
+          <div class="short-info-data">
+            <h3 class="shorts-title">Behind The Scenes of Avatar: Fire and Ash...</h3>
+            <p class="shorts-views">27M views</p>
+          </div>   
+          <div class="shorts-info-options">&#8942;</div>
+        </div>
+      </div>
+
+       <div class="shorts-item">
+        <div class="shorts-video">
+          <img class="shorts-img" src="shorts-img/La mano.avif" alt="Shorts Thumbnail 3">
+        </div>
+        <div class="shorts-info-grid">
+          <div class="short-info-data">
+            <h3 class="shorts-title">LA MANO 1.9 & THEODORA sur... </h3>
+            <p class="shorts-views">365 K views</p>
+          </div>   
+          <div class="shorts-info-options">&#8942;</div>
+        </div>
+      </div>
+
+      <div class="shorts-item">
+        <div class="shorts-video">
+          <img class="shorts-img" src="shorts-img/info.avif" alt="Shorts Thumbnail 4">
+        </div>
+        <div class="shorts-info-grid">
+          <div class="short-info-data">
+            <h3 class="shorts-title">Nouveau Les raccourcis à connaître </h3>
+            <p class="shorts-views">29 views</p>
+          </div>   
+          <div class="shorts-info-options">&#8942;</div>
+        </div>
+      </div>
+
+      <div class="shorts-item">
+        <div class="shorts-video">
+          <img class="shorts-img" src="shorts-img/funy.avif" alt="Shorts Thumbnail 5">
+        </div>
+        <div class="shorts-info-grid">
+          <div class="short-info-data">
+            <h3 class="shorts-title">Ranking The Best Situation Draw 😂 (Part...</h3>
+            <p class="shorts-views">5,4M views</p>
+          </div>   
+          <div class="shorts-info-options">&#8942;</div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="video-grid">
+        <!--Video item-->  
+        <div class="video-item">
+          <div class="video-item-effect"></div>
+          <div class="video-thumbnail">
+            <img class="thumbnail-img" src="video-img/school.avif" alt="Video Thumbnail 1">
+            <span class="video-time">21:57</span>
+          </div>       
+          <div class="video-info">
+            <img class="channel-avatar" src="video-img/cannal_profile.jpg" alt="Channel Avatar 1">
+            <div class="video-metadata">
+              <h3 class="video-title">Des écoles élitistes</h3>
+              <p class="channel-name">CANAL+ Afrique</p>
+              <p class="video-stats">382 k views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-item-effect-2"></div>
+          <div class="video-thumbnail">
+            <img class="thumbnail-img" src="video-img/logique.avif" alt="Video Thumbnail 2">
+            <span class="video-time-2">2:07:57</span>
+          </div>       
+          <div class="video-info">
+            <img class="channel-avatar" src="video-img/logique_profile.jpg" alt="Channel Avatar 2">
+            <div class="video-metadata">
+              <h3 class="video-title">100% Logique – Samedi 1 novembre...</h3>
+              <p class="channel-name">TouteslesPromos</p>
+              <p class="video-stats">62 K views &#183; 1 Month ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-item-effect"></div>
+          <div class="video-thumbnail">
+            <img class="thumbnail-img" src="video-img/WilG.avif" alt="Video Thumbnail 3">
+            <span class="video-time-2">37:38</span>
+          </div>       
+          <div class="video-info">
+            <img class="channel-avatar" src="video-img/CD-profil.jpg" alt="Channel Avatar 3">
+            <div class="video-metadata">
+              <h3 class="video-title">Wil Aime - Le Gendre Idéal</h3>
+              <p class="channel-name">CHAQUE DETAIL</p>
+              <p class="video-stats">12M views &#183; 6 years ago</p>
+            </div>
+          </div>
+        </div>   
+      
+        <!--Video item-->  
+        <div class="video-item">
+          <div class="video-item-effect-2"></div>
+          <div class="video-thumbnail">
+            <img class="thumbnail-img" src="video-img/parlement-rire.avif" alt="Video Thumbnail 1">
+            <span class="video-time">47:54</span>
+          </div>       
+          <div class="video-info">
+            <img class="channel-avatar" src="video-img/parl_profile.jpg" alt="Channel Avatar 1">
+            <div class="video-metadata">
+              <h3 class="video-title">CAN 2025 J-2 ! - Le Parlement du Rire</h3>
+              <p class="channel-name">Afrique Comedy</p>
+              <p class="video-stats">188 k views &#183; 8 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-item-effect"></div>
+          <div class="video-thumbnail">
+            <img class="thumbnail-img" src="video-img/1er league.avif" alt="Video Thumbnail 2">
+            <span class="video-time-2">11:10</span>
+          </div>       
+          <div class="video-info">
+            <div class="channel">
+            <img class="channel-avatar" src="video-img/1erleague_profile.jpg" alt="Channel Avatar 2">
+            </div>
+            <div class="video-metadata">
+              <h3 class="video-title">20 GREAT GOALS | The Best From...</h3>
+              <p class="channel-name">Premier League</p>
+              <p class="video-stats">2 M views &#183; 6 Months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-item-effect-2"></div>
+          <div class="video-thumbnail">
+            <img class="thumbnail-img" src="video-img/WilG.avif" alt="Video Thumbnail 3">
+            <span class="video-time-2">37:38</span>
+          </div>       
+          <div class="video-info">
+            <img class="channel-avatar" src="video-img/CD-profil.jpg" alt="Channel Avatar 3">
+            <div class="video-metadata">
+              <h3 class="video-title">Wil Aime - Le Gendre Idéal</h3>
+              <p class="channel-name">CHAQUE DETAIL</p>
+              <p class="video-stats">12M views &#183; 6 years ago</p>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </main>
+  </main>
+ <!--Main content area (Contenu principal)-->
 </body>
 </html>

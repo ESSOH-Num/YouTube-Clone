@@ -9,24 +9,30 @@
     top: 0;
     left: 0;
     right: 0;
-
-    border-bottom: 1px solid #c6c6c6;
+    background-color: #f8f9fa;
     box-shadow: inset;
     padding: 0 16px;
+
+    z-index: 1001;
   }
 
   /*Left section*/
     .left-section {
-      background-color: lightpink;
       display: flex;
       align-items: center;
     }
     .berger-item {
       height: 26px;
       width: 26px;
+      border-radius: 50px;
       padding: 8px;
       margin: 0 0 0 4px;
       cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .berger-item:hover {
+      transform: scale(1.05);
+      background-color: rgb(225, 225, 225);
     }
     .ytb-item {
       height: 20px;
@@ -38,7 +44,6 @@
   
   /*Middle section*/
     .middle-section {
-      background-color: lightblue;
       flex: 1;
       display: flex;
       align-items: center;
@@ -82,7 +87,7 @@
       width: 100%;
     }
     .voice-search-btn {
-      background-color: #f8f8f8;
+      background-color: #f1f1f1;
       border: none;
       margin-left: 12px;
       height: 40px;
@@ -98,25 +103,25 @@
   
   /*Right section*/
     .right-section {
-      background-color: lightpink;
-      width: 180px;
-      margin-right: 20px;
+      margin-right: 0;
       display: flex;
       align-items: center;
     }
     .right-section-contain {
       display: flex;
       align-items: center;
+      justify-content: start; 
       justify-content: space-between;
-      gap: 15px;
+      gap: 20px;
+      flex-shrink: 0;
     }
     .create-btn {
-      background-color: #f8f8f8;
+      background-color: #f1f1f1;
       border: none;
       border-radius: 30px;
       height: 36px;
       width: 80px;
-      margin-left: 18px;
+      margin-left: 10px;
       cursor: pointer;
     }
     .create-img {
@@ -125,7 +130,7 @@
     }
     .notifications {
       border-radius: 50px;
-      background-color: white;
+      background-color: #f8f9fa;
       height: 26px;
       width: 26px;
       padding: 4px;
@@ -136,6 +141,17 @@
     .notif-img {
       height: 100%;
       width: 100%;
+    }
+    .notif-count {
+      background-color: red;
+      color: white;
+      font-size: 10px;
+      padding: 2px 5px;
+      border: 1px solid white;
+      border-radius: 50px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
     }
     .page-profil {
       height: 35px;
@@ -150,16 +166,36 @@
   /*Right section*/
 
   /*Position Relative and Absolute*/
-    .voice-search-btn {
-      position: relative;
-      align-items: center;
+    .voice-search-btn,
+    .notifications,
+    .create-btn {
+      display: flex;
       justify-content: center;
+      position: relative;
     }
-    .voice-search-btn .tooltip {
+    .voice-search-btn .toolltip,
+    .notifications .toolltip,
+    .create-btn .toolltip {
       position: absolute;
-      background-color: #c6c6c6;
+      background-color: #9f9f9f;
       color: white;
+      font-size: 12px;
+      border-radius: 3px;
+      padding: 4px;
+      bottom: -30px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.2s ease;
     }
+    .voice-search-btn:hover .toolltip,
+    .notifications:hover .toolltip,
+    .create-btn:hover .toolltip {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+
   /*Position Relative and Absolute*/
 
 /*Header css*/

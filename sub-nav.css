@@ -1,0 +1,34 @@
+/* Styles for the sub-navigation container */
+
+.sub-nav-container {
+  position: fixed;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  z-index: 1000;
+  top: 48px; /* Adjust based on header height (Ajuster en fonction de la hauteur de l'en-tête) */
+  left: 72px; /* Adjust based on sidebar width (Ajuster en fonction de la largeur de la barre latérale) */
+  right: 0;
+}
+
+/* Styles for sub-navigation links */
+.sub-nav-link {
+  margin: 0 15px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sub-nav-link:hover {
+  transform: scale(1.05);
+  background-color: #333;
+  color: white;
+}
