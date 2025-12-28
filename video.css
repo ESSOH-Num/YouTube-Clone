@@ -64,7 +64,7 @@
   .video-time-2,
   .video-time-3 {
     position: absolute;
-    top: 170px;
+    top: 180px;
     right: 8px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -109,6 +109,9 @@
     font-size: 14px;
     color: #606060;
     margin: 4px 0 0 0;
+  }
+  .channel-name {
+    transition: color 0.2s ease;
   }
   .channel-name:hover {
     color: #1b1b1b;

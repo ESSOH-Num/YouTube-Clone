@@ -16,6 +16,19 @@
 }
 
 /* Styles for sub-navigation links */
+.sub-nav-link-all {
+  margin: 0 15px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .sub-nav-link {
   margin: 0 15px;
   padding: 8px 12px;
@@ -31,4 +44,11 @@
   transform: scale(1.05);
   background-color: #333;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .sub-nav-container {
+    left: 0;
+    top: 56px; /* Adjust if header height changes on mobile (Ajuster si la hauteur de l'en-tête change sur mobile) */
+  }
 }
