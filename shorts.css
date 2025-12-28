@@ -38,7 +38,15 @@
 
 .shorts-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(160px, 1fr)
+  );
+
+  max-width: calc(6 * 180px);
+  margin: 0 auto;
+
   gap: 16px;
 }
 .shorts-item {
